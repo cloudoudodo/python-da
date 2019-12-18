@@ -6,7 +6,7 @@ def cal_time(func):
         t1 = time.time()
         result = func(*args, **kwargs)
         t2 = time.time()
-        print("%      running time: % secs" % (func.__name__, t2 - t1))
+        print("%     running time: % secs" % (func.__name__, t2 - t1))
         return result
 
     return wrapper
