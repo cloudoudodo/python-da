@@ -93,3 +93,16 @@ Integrated Caching
 A number of products provide a caching tier for SQL database systems. These systems can improve read performance substantially, but they do not improve write performance, and they add operational complexity to system deployments. If your application is dominated by reads then a distributed cache could be considered, but if your application has just a modest write volume, then a distributed cache may not improve the overall experience of your end users, and will add complexity in managing cache invalidation.
 
 Many NoSQL database technologies have excellent integrated caching capabilities, keeping frequently-used data in system memory as much as possible and removing the need for a separate caching layer. Some NoSQL databases also offer fully managed, integrated in-memory database management layer for workloads demanding the highest throughput and lowest latency.
+
+
+#示意文件的打开和操作，以及对错误的处理
+
+f = open('/etc/passwd')
+print('open success')
+#进行读写操作
+
+
+
+
+
+f.close
