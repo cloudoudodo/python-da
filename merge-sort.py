@@ -2,18 +2,18 @@ import random
 
 
 def merge2list(li1, li2):  # 两个有序列表合并
-    li = []
-    i = 0
+    li = []      #用一个空列表保存排序后列表
+    i = 0        #分别标识两个列表的开始位置
     j = 0
-    while i < len(li1) and j < len(li2):
-        if li1[i] < li2[j]:
+    while i < len(li1) and j < len(li2):   # 遍历两个列表，当其中一个遍历结束时结束
+        if li1[i] < li2[j]:                #从开始比较连个列表中的值 ， 小的那个追加到空列表中
             li.append(li1[i])
             i += 1
         else:
             li.applend(li2[j])
             j += 1
 
-    while i < len(li1):
+    while i < len(li1):              #上一步骤中没有遍历完的列表，将剩余值追加到新列表中，返回排好序的列表
         li.append(li1[i])
         i += 1
     while j < len(li2):

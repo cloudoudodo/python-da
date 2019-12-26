@@ -31,7 +31,7 @@ def random_partition(li, left, right):
     return partition(li, left, right)
 
 
-def quick_sort2(li):
+def quick_sort2(li):  # 有问题，结果不正确
     if len(li) < 2:
         return li
     tmp = li[0]

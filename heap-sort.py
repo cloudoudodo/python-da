@@ -1,6 +1,6 @@
 
 import random
-import heapq
+import h
 
 
 def sift(li, low, high):
@@ -9,7 +9,7 @@ def sift(li, low, high):
     i = low
     j = 2 * i + 1
     # i 指向空位，j表示孩子节点的位置
-    while j <= high:  # 第二种情况，空位i是叶子节点
+    while j <= high:  # 第二种情况，空位i是叶子节点结束
         # 如果存在右孩子且右孩子比左孩子大，j指向右孩子
         if j + 1 <= high and li[j] < li[j + 1]:
             j += 1

@@ -4,12 +4,12 @@ def bubble_sort(alist):
     n = len(alist)
 
     for k in range(n - 1):
-        count = 0
+        count = True
         for i in range(n - 1 - k):
             if alist[i] > alist[i + 1]:
                 alist[i], alist[i + 1] = alist[i + 1], alist[i]
-                count += 1
-        if count == 0:
+                count == False
+        if count == True:
             break
 
     return alist
